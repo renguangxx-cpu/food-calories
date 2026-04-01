@@ -297,7 +297,7 @@ HTML_PAGE = """<!DOCTYPE html>
       div.innerHTML =
         '<div class="result-header" onclick="toggleRecord(' + idx + ',this)">' +
           '<div class="result-header-left">' +
-            '<img class="result-thumb" src="' + (rec.thumb || '') + '" onerror="this.style.display=\'none\'">' +
+            '<img class="result-thumb" src="' + (rec.thumb || '') + '" onerror="this.style.display=\\'none\\'">' +
             '<div class="result-meta">' +
               '<span class="result-time">' + rec.date + ' ' + rec.time + (records.length > 1 ? '  \u7b2c' + (records.length - idx) + '\u9910' : '') + '</span>' +
               '<span class="result-calories">' + (rec.calories[0] ? rec.calories[0] + ' - ' + rec.calories[1] + ' kcal' : '热量未识别') + '</span>' +
