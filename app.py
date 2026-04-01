@@ -512,5 +512,6 @@ if __name__ == "__main__":
         print("   运行前请执行: export GEMINI_API_KEY='your-api-key'")
         print()
     print("🍽️  食物热量计算器启动中...")
-    print("   打开 Safari 访问: http://localhost:8080")
-    app.run(host="0.0.0.0", port=8080, debug=False)
+    port = int(os.environ.get("PORT", 8080))
+    print(f"   打开 Safari 访问: http://localhost:{port}")
+    app.run(host="0.0.0.0", port=port, debug=False)
